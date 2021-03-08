@@ -652,8 +652,8 @@ mainnet_block_explorers = {
                         {'tx': 'tx/', 'addr': 'address/'}),
     'cryptoID': ('https://chainz.cryptoid.info/',
                         {'tx': 'btx/tx.dws?', 'addr': 'address.dws?'}),
-    'system default': ('https://explorer.bitcore.cc/',
-                        {'tx': 'tx/', 'addr': '#/BTX/mainnet/address/'}),
+    'system default': ('https://explorer.bitcore.cc/BTX/mainnet/',
+                        {'tx': 'tx/', 'addr': 'address/'}),
 }
 
 testnet_block_explorers = {
