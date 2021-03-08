@@ -69,7 +69,7 @@ base_units = {'BTX':8, 'mBTX':5, 'bits':2, 'sat':0}
 base_units_inverse = inv_dict(base_units)
 base_units_list = ['BTX', 'mBTX', 'bits', 'sat']  # list(dict) does not guarantee order
 
-DECIMAL_POINT_DEFAULT = 5  # mBTC
+DECIMAL_POINT_DEFAULT = 8  # mBTC
 
 
 class UnknownBaseUnit(Exception): pass
@@ -652,8 +652,8 @@ mainnet_block_explorers = {
                         {'tx': 'tx/', 'addr': 'address/'}),
     'cryptoID': ('https://chainz.cryptoid.info/',
                         {'tx': 'btx/tx.dws?', 'addr': 'address.dws?'}),
-    'system default': ('https://insight.bitcore.cc/',
-                        {'tx': 'tx/', 'addr': 'address/'}),
+    'system default': ('https://explorer.bitcore.cc/',
+                        {'tx': 'tx/', 'addr': '#/BTX/mainnet/address/'}),
 }
 
 testnet_block_explorers = {
