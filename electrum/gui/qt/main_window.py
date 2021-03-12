@@ -238,10 +238,10 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, Logger):
 
         # If the option hasn't been set yet
         if config.get('check_updates') is None:
-            choice = self.question(title="Electrum - " + _("Enable update check"),
-                                   msg=_("For security reasons we advise that you always use the latest version of Electrum.") + " " +
-                                       _("Would you like to be notified when there is a newer version of Electrum available?"))
-            config.set_key('check_updates', bool(choice), save=True)
+            #choice = self.question(title="Electrum - " + _("Enable update check"),
+            #                       msg=_("For security reasons we advise that you always use the latest version of Electrum.") #+ " " +
+            #                           _("Would you like to be notified when there is a newer version of Electrum available?"))
+            config.set_key('check_updates', bool(False), save=True)
 
         if config.get('check_updates', False):
             # The references to both the thread and the window need to be stored somewhere
